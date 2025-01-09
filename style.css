@@ -1,0 +1,49 @@
+body{
+  background-color: #f3f2ee;
+}
+.navbar {
+    height: 60px; 
+  }
+  .navbar-collapse {
+    background: white; 
+  }
+.vertical-line {
+    border-left: 1px solid rgb(208, 208, 208); 
+    height: 60px; 
+  }
+a.active{
+    border-bottom: 3px solid black;
+}
+.dropdown-menu-center {
+    left: 0% !important;
+    transform: translateX(-80%) !important;
+}
+
+.profile-foto{
+  margin-top: -20%;
+}
+a.links:hover{
+  color: blue !important;
+}
+a.links2:hover{
+  text-decoration: underline !important;
+}
+
+a.i-hover:hover{
+  background-color: rgb(237, 237, 236);
+}
+
+div.haber-link:hover{
+  background-color: rgb(237, 237, 236) !important;
+}
+
+.footer a:hover{
+  color: blue !important;
+  text-decoration: underline !important;
+}
+
+.card-fixed{
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}

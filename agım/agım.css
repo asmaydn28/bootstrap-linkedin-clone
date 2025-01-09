@@ -1,0 +1,85 @@
+body{
+  background-color: #f3f2ee;
+}
+.navbar {
+    height: 60px; 
+  }
+.vertical-line {
+    border-left: 1px solid rgb(208, 208, 208); 
+    height: 60px; 
+  }
+a.active{
+    border-bottom: 3px solid black;
+}
+.dropdown-menu-center {
+    left: 0% !important;
+    transform: translateX(-80%) !important;
+}
+
+div.a-hover:hover{
+  background-color: rgb(237, 237, 236) !important;
+}
+
+.footer a:hover{
+  color: blue !important;
+  text-decoration: underline !important;
+}
+
+div.link-two:hover{
+  background-color: rgb(208, 208, 208);
+}
+
+
+.link-two {
+  position: relative;
+}
+
+.link-two::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0px; 
+  width: 100%;
+  height: 3px; 
+  background-color: transparent; 
+  transition: background-color 0.3s ease; 
+}
+
+.link-two:hover::after {
+  background-color: green; 
+}
+
+div.yönet:hover{
+  background-color: rgb(236, 235, 235);
+}
+
+.dikey-cizgi{
+  height: 50px;
+  border-right: 1px solid gray;
+}
+
+.ppfoto {
+  position: absolute;
+  top: 90px; 
+  left: 50%;
+  transform: translateX(-50%); 
+}
+
+a.tümü:hover{
+  background-color: rgb(236, 235, 235);
+}
+
+.card-fixed{
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
+
+.navbar-collapse{
+  background-color: white; 
+}
+
+
+
+
+

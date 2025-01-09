@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Linkedin Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- navbar -->
+    <header class="bg-white border-bottom">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg z-1">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="/index.html"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
+                    <path fill="#0078d4" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5	V37z"></path><path d="M30,37V26.901c0-1.689-0.819-2.698-2.192-2.698c-0.815,0-1.414,0.459-1.779,1.364	c-0.017,0.064-0.041,0.325-0.031,1.114L26,37h-7V18h7v1.061C27.022,18.356,28.275,18,29.738,18c4.547,0,7.261,3.093,7.261,8.274	L37,37H30z M11,37V18h3.457C12.454,18,11,16.528,11,14.499C11,12.472,12.478,11,14.514,11c2.012,0,3.445,1.431,3.486,3.479	C18,16.523,16.521,18,14.485,18H18v19H11z" opacity=".05"></path><path d="M30.5,36.5v-9.599c0-1.973-1.031-3.198-2.692-3.198c-1.295,0-1.935,0.912-2.243,1.677	c-0.082,0.199-0.071,0.989-0.067,1.326L25.5,36.5h-6v-18h6v1.638c0.795-0.823,2.075-1.638,4.238-1.638	c4.233,0,6.761,2.906,6.761,7.774L36.5,36.5H30.5z M11.5,36.5v-18h6v18H11.5z M14.457,17.5c-1.713,0-2.957-1.262-2.957-3.001	c0-1.738,1.268-2.999,3.014-2.999c1.724,0,2.951,1.229,2.986,2.989c0,1.749-1.268,3.011-3.015,3.011H14.457z" opacity=".07"></path><path fill="#fff" d="M12,19h5v17h-5V19z M14.485,17h-0.028C12.965,17,12,15.888,12,14.499C12,13.08,12.995,12,14.514,12	c1.521,0,2.458,1.08,2.486,2.499C17,15.887,16.035,17,14.485,17z M36,36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698	c-1.501,0-2.313,1.012-2.707,1.99C24.957,25.543,25,26.511,25,27v9h-5V19h5v2.616C25.721,20.5,26.85,19,29.738,19	c3.578,0,6.261,2.25,6.261,7.274L36,36L36,36z"></path>
+                    </svg>
+                  </a>
+                    <form class="d-flex flex-fill me-lg-0 me-3 search d-sm-block d-none" role="search">
+                        <input class="form-control" type="search" placeholder="🔍 Arama Yap" aria-label="Search">
+                    </form>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item me-2">
+                        <a class="nav-link d-flex flex-column justify-content-center align-items-center active" aria-current="page" href="/index.html">
+                            <i class="fa-solid fa-house fs-5"></i>
+                            <span>Ana Sayfa</span>
+                        </a>
+                      </li>
+                      <li class="nav-item me-2">
+                        <a class="nav-link d-flex flex-column justify-content-center align-items-center" href="/agım/agım.html">
+                            <i class="fa-solid fa-user fs-5"></i>
+                            <span>Ağım</span>
+                        </a>
+                      </li>
+                      <li class="nav-item me-2">
+                        <a class="nav-link d-flex flex-column justify-content-center align-items-center" href="#">
+                            <i class="fa-solid fa-bag-shopping fs-5"></i>
+                            <span>İş İlanları</span>
+                        </a>
+                      </li>
+                      <li class="nav-item me-2">
+                        <a class="nav-link d-flex flex-column justify-content-center align-items-center" href="#">
+                            <i class="fa-solid fa-message fs-5"></i>
+                            <span>Mesajlaşma</span>
+                        </a>
+                      </li>
+                      <li class="nav-item me-2">
+                        <a class="nav-link d-flex flex-column justify-content-center align-items-center" href="#">
+                            <i class="fa-solid fa-bell fs-5"></i>
+                            <span>Bildirimler</span>
+                        </a>
+                      </li>
+                      <li class="nav-item dropdown me-2 d-none d-lg-block">
+                        <a href="#" class="nav-link dropdown-toggle"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-circle fs-5 d-block text-center"></i>
+                            <span>ben</span>
+
+                            <div class="dropdown-menu dropdown-menu-center" style="width: 300px; height: 500px;">
+                                <div class="row justify-content-start align-items-center g-0">
+                                  <div class="col-auto px-2">
+                                    <i class="fa-solid fa-circle display-3" style="color: blue;"></i>
+                                  </div>
+                                  <div class="col-auto">
+                                    <span class="d-block fw-bold">ASIM AYDIN</span>
+                                    <span class="small">Front-End Developer</span>
+                                  </div>
+                                  <div class="p-3">
+                                    <button type="button" class="btn btn-outline-primary btn-sm rounded-5 w-100">Profili Görüntüleyin</button>
+                                  </div>
+                                  <hr>
+                                </div>
+                                <div class="ps-3">
+                                  <h5>Hesap</h5>
+                                  <h6 class="text-muted">
+                                    <span class="d-block">Premium'u Yeniden Etkinleştirin:</span>
+                                    <span>%50 İndirim</span> 
+                                  </h6>
+                                  <span class="text-muted d-block">Ayarlar ve Gizlilik</span>
+                                  <span class="text-muted d-block">Yardım</span>
+                                  <span class="text-muted d-block">Dil</span>
+                                </div>
+                                <hr>
+                                <div class="ps-3">
+                                  <h5>Yönet</h5>
+                                  <span class="text-muted d-block">Gönderi ve Faaliyetler</span>
+                                  <span class="text-muted d-block">İş İlanı Yayınlama Hesabı</span>
+                                </div>
+                                <hr>
+                                <div class="ps-3">
+                                  <span class="text-muted">Oturumu Kapat</span>
+                                </div>
+                            </div>
+                        </a>  
+                      </li>
+                      <div class="vertical-line mx-3 d-none d-xl-block"></div>
+                      <li class="nav-item dropdown me-2 d-none d-xl-block ortalama">
+                        <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-table-cells fs-5 d-block text-center"></i> 
+                            <span>İş İçin</span>
+
+                            <div class="dropdown-menu dropdown-menu-center" style="width: 750px; height: auto;">
+                                <div class="row p-5">
+                                  <div class="col-4 ps-3">
+                                      <h5>Uygulamalarım</h5>
+                                      <p><i class="fa-solid fa-circle me-2" style="color: #74C0FC;"></i>Adayları Bulun</p>
+                                      <p><i class="fa-solid fa-circle me-2" style="color: #74C0FC;"></i>Gruplar</p>
+                                      <h5>Yetenek</h5>
+                                      <p><i class="fa-solid fa-circle me-2" style="color: #74C0FC;"></i>Yetenek İçgörüleri</p>
+                                      <p><i class="fa-solid fa-circle me-2" style="color: #74C0FC;"></i>İş İlanı Yayınla</p>
+                                      <h5>Satış</h5>
+                                      <p><i class="fa-solid fa-circle me-2" style="color: #74C0FC;"></i>Hizmetler Mağazası</p>
+                                      <h5>Pazarlama</h5>
+                                      <p><i class="fa-solid fa-circle me-2" style="color: #74C0FC;"></i>Reklam Ver</p>
+                                  </div>
+                                  <div class="col-8 border-start">
+                                    <h5>Kurumsal Firmalar İçin Diğer Ayrıcalıkları Keşfedin</h5>
+                                    <h6 class="pt-2">Çalışanlarınızı Linkedin'de Bulun</h6>
+                                    <p>Yetenekleri bulun,Onların ilgisini çekin ve İşe alın</p>
+                                    <h6 class="pt-2">Linkedin İle Satış Yapın</h6>
+                                    <p>Satış fırsatlarının kapısını açın</p>
+                                    <h6 class="pt-2">Ücretsiz iş ilanı yayınla</h6>
+                                    <p>Nitelikli başvuru sahiplerine hızlı bir şekilde erişin</p>
+                                    <h6 class="pt-2">Linkedin'e reklam verin</h6>
+                                    <p>İşinizi büyütün ve yeni müşteriler edinin</p>
+                                  </div>
+                                </div>
+                            </div>
+                        </a>
+                      </li>
+                      <li class="nav-item me-2 d-none d-xxl-block">
+                        <a href="#" class="nav-link">
+                          <span class="d-block text-center small text-decoration-underline">Premium'u aktive edin;</span>
+                          <span class="d-block text-center small text-decoration-underline">%50 indirimli</span>
+                        </a>
+                      </li>
+                    </ul>  
+                  </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="row mt-3 mx-auto">
+          <div class="col-lg-3 col-md-4 col-12 ps-lg-5">
+
+            <div class="card position-relative" >
+              <img src="img/card-backroung-img.jpg" style="height: 100px;" class="card-img-top" alt="arkafoto">
+                <div class="card-body">
+                  <img src="img/profile.png" alt="profile-img" class="w-25 position-absolute profile-foto">
+                  <h5 class="card-title mt-4">Asım Aydın</h5>
+                  <p class="card-text">Front-End Developer</p>
+                  <p class="card-text">Giresun</p>
+                  <a href="#" class="btn btn-outline-secondary w-100">Deneyim</a>
+                </div>
+              </img>
+            </div>
+
+            <div class="card mt-2 d-md-block d-none">
+              <div class="card-body">
+                <a href="#" style="font-size: 0.8rem;" class="card-link text-decoration-none text-black text-muted">Özel Araç ve İçgörülere erişin</a>
+                <a href="#" style="font-size: 1rem;" class="card-link text-decoration-none m-0 text-black links">Premium'u aktive edin %50 indirimli</a>
+              </div>
+            </div>
+
+            <div class="card mt-2 d-md-block d-none">
+              <div class="card-body">
+                <span class="card-text small d-block">
+                  <a href="#" class="text-decoration-none text-black links2">Profil görüntüleyenler</a>
+                </span>
+                <span class="card-text small d-block">
+                  <a href="#" class="text-decoration-none text-black links2">Tüm analizleri görüntüle</a>
+                </span>
+              </div>
+            </div>
+
+            <div class="card my-2 d-md-block d-none">
+              <div class="card-body">
+                <a href="#" class="card-link text-decoration-none text-dark links2 d-block mb-1">
+                  <i class="fa-solid fa-floppy-disk"></i>
+                  Kaydedilen öğeler
+                </a>
+                <a href="#" class="card-link text-decoration-none text-dark links2 d-block mb-1 ms-0">
+                  <i class="fa-solid fa-user"></i>
+                  Gruplar
+                </a>
+                <a href="#" class="card-link text-decoration-none text-dark links2 d-block mb-1 ms-0">
+                  <i class="fa-solid fa-newspaper"></i>
+                  Haber bültenleri
+                </a>
+                <a href="#" class="card-link text-decoration-none text-dark links2 d-block ms-0">
+                  <i class="fa-regular fa-calendar-days"></i>
+                  Etkinlikler
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 col-md-8 col-12">
+
+            <div class="card mt-md-0 mt-2">
+              <div class="card-body">
+                <div class="d-flex">
+                  <img src="img/profile.png" alt="profil-foto" class="me-2" style="width: 50px;">
+                  <input type="search" placeholder="   Gönderi Başlatın" class="rounded-5 flex-fill" style="height: 50px;">
+                </div>
+                <div class="d-flex justify-content-around mt-3">
+                  <a href="#" class="text-decoration-none text-black i-hover p-sm-2">
+                    <i class="fa-regular fa-image me-sm-2 me-1" style="color: #74C0FC;"></i>Fotoğraf
+                  </a>
+                  <a href="#" class="text-decoration-none text-black i-hover p-sm-2">
+                    <i class="fa-solid fa-video me-sm-2 me-1" style="color: #63E6BE;"></i>Video
+                  </a>
+                  <a href="#" class="text-decoration-none text-black i-hover p-sm-2">
+                    <i class="fa-regular fa-newspaper me-sm-2 me-1" style="color: #fd0851;"></i>Yazı yaz
+                  </a>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="card my-2">
+              <div class="card-body">
+                <div class="row g-0 position-relative">
+                  <div class="col-auto">
+                    <img src="img/profile.png" alt="profil-foto" style="width: 50px;" class="me-2">
+                  </div>
+                  <div class="col-auto">
+                    <span class="d-block fw-bold">Asım Aydın</span>
+                    <span class="small text-muted">Front-End Developer</span>
+                  </div>
+                  <a href="#" class="position-absolute text-end pe-4 text-black"><i class="fa-solid fa-ellipsis"></i></a>
+                  <a href="#" class="position-absolute text-end text-black"><i class="fa-solid fa-x"></i></a>
+                </div>
+                <p class="mt-2 small">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, voluptatem!</p>
+                <img src="img/card-backroung-img.jpg" alt="image" class="img-fluid">
+                <div class="d-flex">
+                  <i class="fa-solid fa-thumbs-up m-2" style="color: #0f81d7;"></i>
+                  <i class="fa-solid fa-heart my-2 mx-1" style="color: #ff0019;"></i>
+                  <i class="fa-solid fa-hands-clapping my-2 mx-1" style="color: #63E6BE;"></i>
+                  <span class="small text-muted my-2 mx-1 d-sm-block d-none">12 Kişi beğendi</span>
+                  <span class="small text-muted ms-auto m-2">3 Yorum</span>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-around">
+                  <a href="#" class="text-decoration-none text-dark i-hover p-2 d-flex align-items-center">
+                    <i class="fa-regular fa-thumbs-up me-2"></i>
+                    <span class="d-sm-block d-none">Beğen</span>
+                  </a>
+                  <a href="#" class="text-decoration-none text-dark i-hover p-2 d-flex align-items-center">
+                    <i class="fa-solid fa-comment me-2"></i>
+                    <span class="d-sm-block d-none">Yorum yap</span>
+                  </a>
+                  <a href="#" class="text-decoration-none text-dark i-hover p-2 d-flex align-items-center">
+                    <i class="fa-solid fa-share-from-square me-2"></i>
+                    <span class="d-sm-block d-none">Paylaş</span>
+                  </a>
+                  <a href="#" class="text-decoration-none text-dark i-hover p-2 d-flex align-items-center">
+                    <i class="fa-solid fa-paper-plane me-2"></i>
+                    <span class="d-sm-block d-none">Gönder</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <div class="row g-0 position-relative">
+                  <div class="col-auto">
+                    <img src="img/profile.png" alt="profil-foto" style="width: 50px;" class="me-2">
+                  </div>
+                  <div class="col-auto">
+                    <span class="d-block fw-bold">Asım Aydın</span>
+                    <span class="small text-muted">Front-End Developer</span>
+                  </div>
+                  <a href="#" class="position-absolute text-end pe-4 text-black"><i class="fa-solid fa-ellipsis"></i></a>
+                  <a href="#" class="position-absolute text-end text-black"><i class="fa-solid fa-x"></i></a>
+                </div>
+                <p class="mt-2 small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, sequi. Quis nihil reprehenderit at iure facere commodi unde sapiente iusto aliquid dolor? Possimus, in sed esse aliquam est eligendi obcaecati?</p>
+                <div class="d-flex">
+                  <i class="fa-solid fa-thumbs-up m-2" style="color: #0f81d7;"></i>
+                  <i class="fa-solid fa-heart my-2 mx-1" style="color: #ff0019;"></i>
+                  <i class="fa-solid fa-hands-clapping my-2 mx-1" style="color: #63E6BE;"></i>
+                  <span class="small text-muted my-2 mx-1 d-sm-block d-none">10 Kişi beğendi</span>
+                  <span class="small text-muted ms-auto m-2">1 Yorum</span>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-around">
+                  <a href="#" class="text-decoration-none text-dark i-hover p-2 d-flex align-items-center">
+                    <i class="fa-regular fa-thumbs-up me-2"></i>
+                    <span class="d-sm-block d-none">Beğen</span>
+                  </a>
+                  <a href="#" class="text-decoration-none text-dark i-hover p-2 d-flex align-items-center">
+                    <i class="fa-solid fa-comment me-2"></i>
+                    <span class="d-sm-block d-none">Yorum yap</span>
+                  </a>
+                  <a href="#" class="text-decoration-none text-dark i-hover p-2 d-flex align-items-center">
+                    <i class="fa-solid fa-share-from-square me-2"></i>
+                    <span class="d-sm-block d-none">Paylaş</span>
+                  </a>
+                  <a href="#" class="text-decoration-none text-dark i-hover p-2 d-flex align-items-center">
+                    <i class="fa-solid fa-paper-plane me-2"></i>
+                    <span class="d-sm-block d-none">Gönder</span>
+                  </a>
+                </div> 
+              </div>
+            </div>
+
+            <div class="card my-2">
+              <div class="card-body">
+                <div class="row g-0 position-relative">
+                  <div class="col-auto">
+                    <img src="img/profile.png" alt="profil-foto" style="width: 50px;" class="me-2">
+                  </div>
+                  <div class="col-auto">
+                    <span class="d-block fw-bold">Asım Aydın</span>
+                    <span class="small text-muted">Front-End Developer</span>
+                  </div>
+                  <a href="#" class="position-absolute text-end pe-4 text-black"><i class="fa-solid fa-ellipsis"></i></a>
+                  <a href="#" class="position-absolute text-end text-black"><i class="fa-solid fa-x"></i></a>
+                </div>
+                <p class="mt-2 small">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, voluptatem!</p>
+                <img src="img/card-backroung-img.jpg" alt="image" class="img-fluid">
+                <div class="d-flex">
+                  <i class="fa-solid fa-thumbs-up m-2" style="color: #0f81d7;"></i>
+                  <i class="fa-solid fa-heart my-2 mx-1" style="color: #ff0019;"></i>
+                  <i class="fa-solid fa-hands-clapping my-2 mx-1" style="color: #63E6BE;"></i>
+                  <span class="small text-muted my-2 mx-1 d-sm-block d-none">12 Kişi beğendi</span>
+                  <span class="small text-muted ms-auto m-2">3 Yorum</span>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-around">
+                  <a href="#" class="text-decoration-none text-dark i-hover p-2 d-flex align-items-center">
+                    <i class="fa-regular fa-thumbs-up me-2"></i>
+                    <span class="d-sm-block d-none">Beğen</span>
+                  </a>
+                  <a href="#" class="text-decoration-none text-dark i-hover p-2 d-flex align-items-center">
+                    <i class="fa-solid fa-comment me-2"></i>
+                    <span class="d-sm-block d-none">Yorum yap</span>
+                  </a>
+                  <a href="#" class="text-decoration-none text-dark i-hover p-2 d-flex align-items-center">
+                    <i class="fa-solid fa-share-from-square me-2"></i>
+                    <span class="d-sm-block d-none">Paylaş</span>
+                  </a>
+                  <a href="#" class="text-decoration-none text-dark i-hover p-2 d-flex align-items-center">
+                    <i class="fa-solid fa-paper-plane me-2"></i>
+                    <span class="d-sm-block d-none">Gönder</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="col-lg-4 d-lg-block d-none pe-xl-5">
+
+            <div class="card">
+              <div class="card-body px-0">
+                <div class="row position-relative mx-2">
+                  <h5>LinkedIn Haberler</h5>
+                  <a href="#" class="position-absolute text-end text-dark"><i class="fa-solid fa-exclamation"></i></a>
+                </div>
+                <div class="text-muted px-3">Öne çıkan hikayeler</div>
+                <div class="haber-link px-3 py-2">
+                  <a href="#" class="text-decoration-none text-dark ">
+                    <span class="d-block fw-bold small">US Steel, Nippon sue to save merger</span>
+                    <span class="small d-block text-muted">48a önce • 34.314 okuyucu</span>
+                  </a>
+                </div>
+                <div class="haber-link px-3 py-2">
+                  <a href="#" class="text-decoration-none text-dark ">
+                    <span class="d-block fw-bold small">Major winter storm snarls travel</span>
+                    <span class="small d-block text-muted">1s önce • 22.624 okuyucu</span>
+                  </a>
+                </div>
+                <div class="haber-link px-3 py-2">
+                  <a href="#" class="text-decoration-none text-dark ">
+                    <span class="d-block fw-bold small">Hulu+ Live TV, Fubo to merge</span>
+                    <span class="small d-block text-muted">1s önce • 475 okuyucu</span>
+                  </a>
+                </div>
+                <div class="haber-link px-3 py-2">
+                  <a href="#" class="text-decoration-none text-dark ">
+                    <span class="d-block fw-bold small">UPS adds healthcare to deliveries</span>
+                    <span class="small d-block text-muted">56a önce • 878 okuyucu</span>
+                  </a>
+                </div>
+                <div class="haber-link px-3 py-2">
+                  <a href="#" class="text-decoration-none text-dark ">
+                    <span class="d-block fw-bold small">US Steel, Nippon sue to save merger</span>
+                    <span class="small d-block text-muted">48a önce • 34.314 okuyucu</span>
+                  </a>
+                </div>
+                <div class="dropdown px-3">
+                  <a class="dropdown-toggle text-decoration-none text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Daha fazla göster
+                  </a>
+                
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer mt-3">
+              <div class="d-flex justify-content-around">
+                <a href="#" class="text-decoration-none text-black-50 small">Hakkında</a>
+                <a href="#" class="text-decoration-none text-black-50 small">Erişilebilirlik</a>
+                <a href="#" class="text-decoration-none text-black-50 small">Yardım Merkezi</a>
+              </div>
+              <div class="d-flex justify-content-evenly">
+                <a href="#" class="text-decoration-none text-black-50 small dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Gizlilik ve Koşullar</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              <a href="#" class="text-decoration-none text-black-50 small">Reklam Tercihleri</a>
+              </div>
+              <div class="d-flex justify-content-evenly">
+                <a href="#" class="text-decoration-none text-black-50 small">Reklam</a>
+                <a href="#" class="text-decoration-none text-black-50 small dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ticari Hizmetler</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+              <div class="d-flex justify-content-around">
+                <a href="#" class="text-decoration-none text-black-50 small">Linkedln uygulamasını yükle</a>
+                <a href="#" class="text-decoration-none text-black-50 small">Daha Fazla</a>
+              </div>
+              <div class="text-center">
+              <img src="img/LinkedIn-Logo.wine.svg" alt="linkdln" class="img-fluid w-25">
+              <span class="small">LinkedIn Clone Asım Aydın © 2025</span>  
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <div class="card card-fixed me-2 d-md-block d-none">
+      <div class="card-body">
+        <img src="img/profile.png" alt="profil-foto" style="height: 30px;">
+        <span class="me-5 fw-semibold">Mesajlaşma</span>
+        <a href="#" class="text-black mx-2"><i class="fa-solid fa-ellipsis"></i></a>
+        <a href="#" class="text-black mx-2"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <a href="#" class="text-black mx-2"><i class="fa-solid fa-angle-up"></i></a>
+      </div>
+    </div>
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
